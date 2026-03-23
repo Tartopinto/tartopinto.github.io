@@ -14,7 +14,14 @@ Currently, I am pivoting my expertise toward **Scientific Machine Learning (SciM
 ## 🔬 Featured Research Simulation
 <div class="notice--info">
   <p align="center">
-    <img src=https://github.com/user-attachments/assets/95accadf-16dd-4013-a30d-50dce58d311f alt="Active Matter Simulation" width="100%">
+    <video src="https://github.com/user-attachments/assets/95accadf-16dd-4013-a30d-50dce58d311f" 
+           controls 
+           autoplay 
+           loop 
+           muted 
+           style="width:100%; border-radius:8px;">
+      Your browser does not support the video tag.
+    </video>
     <br>
     <em>Numerical integration of 2D density field equations using pseudo-spectral schemes.</em>
   </p>
