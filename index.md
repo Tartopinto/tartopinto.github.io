@@ -12,20 +12,10 @@ Currently, I am pivoting my expertise toward **Scientific Machine Learning (SciM
 ---
 
 ## 🔬 Featured Research Simulation
-<div class="notice--info">
-  <p align="center">
-    <video src="https://github.com/user-attachments/assets/95accadf-16dd-4013-a30d-50dce58d311f" 
-           controls 
-           autoplay 
-           loop 
-           muted 
-           style="width:100%; border-radius:8px;">
-      Your browser does not support the video tag.
-    </video>
-    <br>
-    <em>Numerical integration of 2D density field equations using pseudo-spectral schemes.</em>
-  </p>
-</div>
+
+<video src=https://github.com/user-attachments/assets/b51ee3b3-a603-40a6-adc8-1bcef1f50ade controls autoplay loop muted style="width:100%;"></video>
+
+
 
 ### Research Focus
 During my postdoc at **Sapienza University** and the **Max Planck Institute**, I developed computational frameworks to understand the statistical properties of active fluids. I specialized in:
