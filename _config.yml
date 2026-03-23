@@ -8,7 +8,7 @@ description: >-
   towards Scientific Machine Learning (SciML).
 twitter_username: 
 github_username: tartopinto
-minimal_mistakes_skin: sunsire # Puoi provare "air", "aqua", "contrast", "dirt", "neon", "sunrise"
+minimal_mistakes_skin: sunrise # Puoi provare "air", "aqua", "contrast", "dirt", "neon", "sunrise"
 search: true
 
 # Build settings
