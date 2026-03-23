@@ -9,58 +9,54 @@ author_profile: true
   <a href="/assets/CV_Giordano_Fausti.pdf" class="btn btn--info btn--large">📥 Download Full CV (PDF)</a>
 </p>
 
-## Professional Summary
+## 🚀 Professional Profile
+Computational physicist with **5+ years of experience** in developing large-scale simulations and analyzing terabyte-scale datasets. Expert in modeling complex active matter systems, currently focusing on **Scientific Machine Learning** and physics-based modeling to build efficient surrogates for physical simulations and industrial challenges.
 
-**Computational Physicist** with 5+ years of experience in high-performance computing (HPC) and large-scale physical simulations. Specialist in modeling **active matter systems** and non-equilibrium statistical mechanics. Currently focusing on **Scientific Machine Learning (SciML)** to develop efficient neural surrogates for complex dynamical systems.
-
----
-
-## Education
-
-**Ph.D. in Physics** | 2018 – 2021
-*Sapienza University of Rome & Paris-Saclay University*
-* Thesis: Statistical physics of active particles and non-equilibrium systems.
-* Double degree program (Italy/France).
-
-**M.Sc. in Physics (Theoretical)** | 2018
-*Sapienza University of Rome*
-* Specialized in Mathematical Modeling for Engineering and Physics.
+## 🛠️ Technical Stack
+* **Programming:** ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white)
+* **HPC & Performance:** OpenMP-based parallelization (10x speedup), large-scale simulations.
+* **Numerical Methods:** SDE/ODE/PDE integration, finite-difference and pseudo-spectral methods.
+* **Data Science:** NumPy, Matplotlib, advanced analysis on 1 TB+ datasets.
+* **Tools:** ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=flat&logo=latex&logoColor=white) ![Linux](https://img.shields.io/badge/linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
 
 ---
 
-## Research Experience
+## 💼 Experience
 
-**Postdoctoral Researcher** | 2023 – 2025
-*Sapienza University of Rome, Italy*
-* Developed C-based simulation frameworks for stochastic physical models.
-* Analyzed **>1 TB datasets** of living systems using Python, AWK, and Bash.
-* Provided pedagogical supervision for the "Computational Physics Lab 1".
+### **Postdoctoral Researcher** | Sapienza University of Rome
+*2023 – 2025*
+* Designed and implemented C simulations for stochastic and non-equilibrium systems.
+* Analyzed large living-system datasets using Python, AWK, and Bash.
+* Teaching assistant for *Computational Physics Lab 1*.
 
-**Postdoctoral Researcher** | 2022 – 2023
-*Max Planck Institute for Dynamics and Self-Organization, Germany*
-* Investigated integration methods for SDEs with multiplicative noise.
-* Implemented **pseudo-spectral and finite-difference schemes** for 1D density field equations.
+### **Postdoctoral Researcher** | Max Planck Institute, Göttingen
+*2022 – 2023*
+* Researched integration methods for SDEs with multiplicative noise.
+* Developed numerical schemes for 1D density field equations.
 
----
-
-## Technical Skills
-
-* **Programming:** C (HPC/OpenMP), Python (NumPy, Matplotlib, SciPy), Bash, AWK.
-* **Numerical Methods:** Stochastic Differential Equations (SDEs), PDEs, Spectral Methods.
-* **Tools:** Git, LaTeX, Linux/Unix administration.
-* **Languages:** Italian (Native), English (Professional), French (Basic).
+### **PhD in Statistical Physics** | CEA Paris-Saclay
+*2018 – 2021*
+* Developed high-performance C codes for complex stochastic differential equations.
+* Achieved 10x speedup via OpenMP parallelization.
+* Processed and analyzed datasets exceeding 1 TB.
 
 ---
 
-## Teaching & Mentoring
-
-* **Lab Assistant:** *Laboratorio di Fisica Computazionale 1* (Sapienza).
-* Supervised student projects focused on numerical implementations in C and Python.
+## 🎓 Education
+* **Master’s in Physics of Complex Systems** | Sorbonne University & Polytechnic University of Turin (110/110).
+* **Bachelor’s in Physical Engineering** | Politecnico di Torino (110/110).
 
 ---
 
-## Interests & Values
+## 📚 Selected Publications
+* **Statistical properties of microphase and bubbly phase-separated active fluids** - *Physical Review E* (2024).
+* **Interface roughening in nonequilibrium phase-separated systems** - *Physical Review Letters* (2023).
+* **Capillary interfacial tension in active phase separation** - *Physical Review Letters* (2021).
+* **Self-organized critical coexistence phase in repulsive active particles** - *Physical Review Letters* (2020).
 
-* **Martial Arts:** Black belt level training in Judo, Kudo, Karate, and Jujitsu.
-* **Creative:** Photography and video editing (tools like Adobe Premiere/Lightroom).
-* **Community:** Regular blood donor.
+---
+
+## 🌟 Languages & Interests
+* **Languages:** Italian (Native), English & French (Full Professional), Spanish (Basic).
+* **Sports:** Judo, Karate, Kudo, Jujitsu, Volleyball.
+* **Hobbies:** Hiking, photography, video/photo editing.
