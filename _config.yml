@@ -36,7 +36,7 @@ plugins:
 author:
   name    : "Giordano Fausti"
   avatar  : "/assets/images/bio-photo.jpg" # Ricorda di caricare la tua foto qui
-  bio     : "Simulation Intelligence & Computational Physics Researcher. Focused on SciML, Active Matter, and HPC."
+  bio     : "Simulation Intelligence & Computational Physics Researcher. Focused on physical simulations, SciML, Active Matter, and HPC."
   location: "Rome, Italy"
   links:
     - label: "LinkedIn"
