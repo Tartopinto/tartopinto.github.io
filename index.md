@@ -28,10 +28,13 @@ During my postdoc at **Sapienza University** and the **Max Planck Institute**, I
 ---
 
 ## 🛠️ Technical Toolbox
+
+| Area | Technologies |
 |:---|:---|
 | **Programming** | C (OpenMP), Python (NumPy, Matplotlib), Bash, AWK |
 | **Simulations** | Stochastic Dynamics, PDE/SDE Integration, Active Matter |
 | **Tools** | Git, LaTeX, Linux Environments, Video/Photo Editing |
+{: .full}
 
 ---
 
