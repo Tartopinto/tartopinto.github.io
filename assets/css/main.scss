@@ -31,3 +31,15 @@
     width: calc(100% - 340px) !important;
   }
 }
+
+/* --- RIMUOVI EFFETTO TRASPARENZA SULL'AVATAR --- */
+
+.author__avatar img {
+  opacity: 1 !important; /* Forza l'opacità al 100% (massima visibilità) */
+  transition: none !important; /* Opzionale: rimuove l'animazione di transizione */
+}
+
+/* Assicuriamoci che non cambi nulla nemmeno quando ci passi sopra col mouse */
+.author__avatar:hover img {
+  opacity: 1 !important; 
+}
