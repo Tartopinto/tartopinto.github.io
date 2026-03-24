@@ -13,7 +13,7 @@ Currently, I am pivoting my expertise toward **Scientific Machine Learning (SciM
 
 ## 🔬 Featured Research Simulation
 
-![Active Matter Simulation]({{ 'assets/images/BPS-simulation.gif' | relative_url }}){: .align-center}
+![Active Matter Simulation]({{ '/assets/images/BPS_pseudo_simu.gif' | relative_url }}){: .align-center}
 
 <p align="center"><em>Numerical integration of 2D density field equations using pseudo-spectral schemes.</em></p>
 
