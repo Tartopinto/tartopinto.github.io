@@ -32,20 +32,27 @@
   }
 }
 
-/* --- FIX CHIRURGICO OPACITÀ AVATAR --- */
-
-/* 1. Colpiamo il contenitore dell'autore all'interno della sidebar */
-/* Molti temi Minimal Mistakes definiscono l'opacità qui */
-.sidebar .author__avatar,
-.sidebar .author__avatar:hover {
-  opacity: 1 !important; /* Forza l'opacità massima sul contenitore */
-  filter: none !important; /* Rimuove eventuali filtri gray-scale o sfocature */
+/* 1. Forza l'opacità su tutta la colonna sinistra */
+.sidebar {
+  opacity: 1 !important;
+  transition: none !important;
+  width: 300px !important; /* Manteniamo la larghezza che volevi */
 }
 
-/* 2. Colpiamo l'immagine stessa all'interno del contenitore */
-.sidebar .author__avatar img,
-.sidebar .author__avatar:hover img {
-  opacity: 1 !important; /* Forza l'opacità massima sull'immagine */
-  transition: none !important; /* Elimina l'animazione di transizione */
+/* 2. Assicuriamoci che anche i link e i testi all'interno siano al 100% */
+.sidebar * {
+  opacity: 1 !important;
   filter: none !important;
+}
+
+/* 3. Manteniamo la tua foto quadrata e grande */
+.author__avatar img {
+  border-radius: 4px !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* 4. Evitiamo che torni trasparente quando il mouse esce */
+.sidebar:hover {
+  opacity: 1 !important;
 }
