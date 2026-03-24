@@ -32,14 +32,20 @@
   }
 }
 
-/* --- RIMUOVI EFFETTO TRASPARENZA SULL'AVATAR --- */
+/* --- FIX DEFINITIVO OPACITÀ AVATAR --- */
 
-.author__avatar img {
-  opacity: 1 !important; /* Forza l'opacità al 100% (massima visibilità) */
-  transition: none !important; /* Opzionale: rimuove l'animazione di transizione */
+/* Applichiamo l'opacità massima a tutti i possibili stati dell'immagine */
+.author__avatar img, 
+.author__avatar:hover img,
+.sidebar .author__avatar img,
+.sidebar .author__avatar:hover img {
+  opacity: 1 !important;
+  filter: none !important;      /* Rimuove eventuali filtri gray-scale o sfocature */
+  -webkit-filter: none !important;
+  transition: none !important;  /* Elimina l'animazione di entrata/uscita */
 }
 
-/* Assicuriamoci che non cambi nulla nemmeno quando ci passi sopra col mouse */
-.author__avatar:hover img {
-  opacity: 1 !important; 
+/* Alcuni temi usano un contenitore con opacità, colpiamo anche quello */
+.author__content {
+  opacity: 1 !important;
 }
