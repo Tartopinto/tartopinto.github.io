@@ -35,9 +35,9 @@ plugins:
 # Author Settings
 author:
   name    : "Giordano Fausti"
-  avatar  : "/assets/images/bio-photo.jpg" # Ricorda di caricare la tua foto qui
+  avatar  : "/assets/images/bio-photo.jpg"
   bio     : "Simulation Intelligence & Computational Physics Researcher. Focused on physical simulations, SciML, Active Matter, and HPC."
-  location: "Rome, Italy"
+  location: "Brescia, Italy"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
