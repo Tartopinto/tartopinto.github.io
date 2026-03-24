@@ -5,12 +5,12 @@ permalink: /cv/
 author_profile: true
 ---
 
-<p align="center">
+<p align="left">
   <a href="/assets/CV_Giordano_Fausti.pdf" class="btn btn--info btn--large">📥 Download Full CV (PDF)</a>
 </p>
 
 ## 🚀 Professional Profile
-Computational physicist with **5+ years of experience** in developing large-scale simulations and analyzing terabyte-scale datasets. Expert in modeling complex active matter systems, currently focusing on **Scientific Machine Learning** and physics-based modeling to build efficient surrogates for physical simulations and industrial challenges.
+Computational physicist with **5+ years of experience** in developing large-scale simulations and analyzing terabyte-scale datasets. Expert in modeling complex active matter systems, currently transitioning to **Scientific Machine Learning** and physics-based modeling to build efficient surrogates for physical simulations and industrial challenges.
 
 ## 🛠️ Technical Stack
 * **Programming:** ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white)
@@ -26,13 +26,12 @@ Computational physicist with **5+ years of experience** in developing large-scal
 ### **Postdoctoral Researcher** | Sapienza University of Rome
 *2023 – 2025*
 * Designed and implemented C simulations for stochastic and non-equilibrium systems.
-* Analyzed large living-system datasets using Python, AWK, and Bash.
-* Teaching assistant for *Computational Physics Lab 1*.
+* Analyzed living-system datasets using Python, AWK, and Bash.
+* Teaching assistant for *Computational Physics Laboratory*.
 
 ### **Postdoctoral Researcher** | Max Planck Institute, Göttingen
 *2022 – 2023*
 * Researched integration methods for SDEs with multiplicative noise.
-* Developed numerical schemes for 1D density field equations.
 
 ### **PhD in Statistical Physics** | CEA Paris-Saclay
 *2018 – 2021*
@@ -49,10 +48,7 @@ Computational physicist with **5+ years of experience** in developing large-scal
 ---
 
 ## 📚 Selected Publications
-* **Statistical properties of microphase and bubbly phase-separated active fluids** - *Physical Review E* (2024).
-* **Interface roughening in nonequilibrium phase-separated systems** - *Physical Review Letters* (2023).
-* **Capillary interfacial tension in active phase separation** - *Physical Review Letters* (2021).
-* **Self-organized critical coexistence phase in repulsive active particles** - *Physical Review Letters* (2020).
+I have authored several papers in **Physical Review Letters** and **Physical Review E**. You can find the full list in the [Publications](/publications/) section.
 
 ---
 
