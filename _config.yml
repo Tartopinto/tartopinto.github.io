@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 # Site settings
-title: Giordano Fausti
+title: 
 email: fausti.giordano@gmail.com
 description: >- 
   Computational physicist with 5+ years of experience in large-scale simulations, 
@@ -8,7 +8,7 @@ description: >-
   towards Scientific Machine Learning (SciML).
 twitter_username: 
 github_username: tartopinto
-minimal_mistakes_skin: sunrise # Puoi provare "air", "aqua", "contrast", "dirt", "neon", "sunrise"
+minimal_mistakes_skin: air # Puoi provare "air", "aqua", "contrast", "dirt", "neon", "sunrise"
 search: true
 
 # Build settings
