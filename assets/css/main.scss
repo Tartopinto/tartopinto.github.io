@@ -2,35 +2,32 @@
 # I trattini servono a Jekyll per processare il file
 ---
 
-@import "minimal-mistakes"; // FONDAMENTALE: carica lo stile del tema
+@import "minimal-mistakes";
 
-/* --- Le tue personalizzazioni --- */
-
-/* 1. Allarga la sidebar e l'avatar */
-.sidebar {
-  width: 300px; /* Più spazio per la tua foto */
-}
+/* --- FIX AVATAR GRANDE E QUADRATO --- */
 
 .author__avatar {
-  display: block;
-  width: 100%;
-  max-width: 260px; /* Foto decisamente più grande */
-  margin-left: auto;
-  margin-right: auto;
+  display: block !important;
+  width: 100% !important; 
+  max-width: 250px !important; /* Forza la larghezza massima */
+  margin-bottom: 20px !important;
 
   img {
-    border-radius: 4px; /* Toglie il cerchio e la rende quadrata */
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Un po' di ombra professionale */
+    width: 100% !important;      /* Occupa tutto lo spazio disponibile */
+    height: auto !important;
+    max-width: none !important;  /* Rimuove limiti del tema originale */
+    border-radius: 4px !important; /* La rende quadrata */
+    object-fit: cover !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 }
 
-/* 2. Regola lo spazio del contenuto principale per non farlo finire sotto la sidebar */
+/* Allarga la sidebar per ospitare l'immagine più grande */
 @media (min-width: 64em) {
+  .sidebar {
+    width: 300px !important;
+  }
   .archive, .page {
     width: calc(100% - 340px) !important;
-    padding-right: 0 !important;
   }
 }
