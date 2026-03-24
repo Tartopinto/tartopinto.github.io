@@ -32,20 +32,20 @@
   }
 }
 
-/* --- FIX DEFINITIVO OPACITÀ AVATAR --- */
+/* --- FIX CHIRURGICO OPACITÀ AVATAR --- */
 
-/* Applichiamo l'opacità massima a tutti i possibili stati dell'immagine */
-.author__avatar img, 
-.author__avatar:hover img,
-.sidebar .author__avatar img,
-.sidebar .author__avatar:hover img {
-  opacity: 1 !important;
-  filter: none !important;      /* Rimuove eventuali filtri gray-scale o sfocature */
-  -webkit-filter: none !important;
-  transition: none !important;  /* Elimina l'animazione di entrata/uscita */
+/* 1. Colpiamo il contenitore dell'autore all'interno della sidebar */
+/* Molti temi Minimal Mistakes definiscono l'opacità qui */
+.sidebar .author__avatar,
+.sidebar .author__avatar:hover {
+  opacity: 1 !important; /* Forza l'opacità massima sul contenitore */
+  filter: none !important; /* Rimuove eventuali filtri gray-scale o sfocature */
 }
 
-/* Alcuni temi usano un contenitore con opacità, colpiamo anche quello */
-.author__content {
-  opacity: 1 !important;
+/* 2. Colpiamo l'immagine stessa all'interno del contenitore */
+.sidebar .author__avatar img,
+.sidebar .author__avatar:hover img {
+  opacity: 1 !important; /* Forza l'opacità massima sull'immagine */
+  transition: none !important; /* Elimina l'animazione di transizione */
+  filter: none !important;
 }
