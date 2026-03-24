@@ -1,26 +1,36 @@
 ---
-# I due set di trattini sono obbligatori per attivare Jekyll
+# I trattini servono a Jekyll per processare il file
 ---
+
+@import "minimal-mistakes"; // FONDAMENTALE: carica lo stile del tema
+
+/* --- Le tue personalizzazioni --- */
+
+/* 1. Allarga la sidebar e l'avatar */
+.sidebar {
+  width: 300px; /* Più spazio per la tua foto */
+}
 
 .author__avatar {
   display: block;
-  width: 100%; 
-  max-width: 250px; 
+  width: 100%;
+  max-width: 260px; /* Foto decisamente più grande */
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  
+
   img {
-    border-radius: 4px; /* Rende la foto quadrata */
+    border-radius: 4px; /* Toglie il cerchio e la rende quadrata */
     width: 100%;
     height: auto;
     object-fit: cover;
-    border: 1px solid #ddd;
-    padding: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Un po' di ombra professionale */
   }
 }
 
-/* Opzionale: allarga leggermente la sidebar per far stare la foto */
-.sidebar {
-  width: 300px;
+/* 2. Regola lo spazio del contenuto principale per non farlo finire sotto la sidebar */
+@media (min-width: 64em) {
+  .archive, .page {
+    width: calc(100% - 340px) !important;
+    padding-right: 0 !important;
+  }
 }
