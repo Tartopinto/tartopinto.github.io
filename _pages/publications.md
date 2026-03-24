@@ -19,7 +19,7 @@ I have authored 4 peer-reviewed articles in prestigious journals, focusing on ac
 
 ### 2023
 * **Interface roughening in nonequilibrium phase-separated systems** *Besse, M., Fausti, G., Cates, M. E., Delamotte, B., & Nardini, C.* **Physical Review Letters**, 130(18).  
-    [DOI: 10.1103/PhysRevLett.130.188201](https://doi.org/10.1103/PhysRevLett.130.188201)
+    [DOI: 10.1103/PhysRevLett.130.187102](https://doi.org/10.1103/PhysRevLett.130.187102)
 
 ---
 
