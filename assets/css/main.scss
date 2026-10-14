@@ -2,28 +2,36 @@
 # The dashes above are required so Jekyll processes this file
 ---
 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 /* ==========================================================
-   Sidebar avatar and author block
-   Mobile-first: base rules apply to phones, the media query
-   below adds the desktop layout.
+   Sidebar author block
+   Mobile-first: base rules target phones, the media query at
+   the bottom adds the desktop layout.
    ========================================================== */
 
-/* Stack avatar and text vertically and center them */
 .sidebar {
   width: 100%;
-  opacity: 1;
+  opacity: 1;                 /* the theme dims the sidebar on desktop */
   transition: none;
 }
 
-.sidebar .author__avatar {
+/* On phones the theme lays out avatar, text and links as three
+   table-cells side by side. Turn all three into stacked blocks. */
+.sidebar .author__avatar,
+.sidebar .author__content,
+.sidebar .author__urls-wrapper {
   display: block;
-  float: none;
   width: 100%;
-  max-width: 200px;           /* smaller photo on phones */
-  margin: 0 auto 15px;        /* centered, space below the photo */
   padding: 0;
+  text-align: center;
+}
+
+/* Avatar: square photo, centered, with space below */
+.sidebar .author__avatar {
+  max-width: 200px;
+  margin: 0 auto 15px;
 
   img {
     display: block;
@@ -32,17 +40,37 @@
     max-width: none;          /* override the theme's small avatar limit */
     aspect-ratio: 1 / 1;      /* force a square crop */
     object-fit: cover;
-    border-radius: 4px;       /* square with slightly rounded corners */
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
-.sidebar .author__content {
-  display: block;             /* the theme uses table-cell here */
-  width: 100%;
+/* Contact links: always visible instead of the "Follow" dropdown */
+.sidebar .author__urls-wrapper button {
+  display: none;
+}
+
+.sidebar .author__urls {
+  display: block;
+  position: static;           /* the theme uses absolute for the dropdown */
+  margin: 0;
   padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
   text-align: center;
-  clear: both;
+}
+
+/* Hide the dropdown's decorative arrows */
+.sidebar .author__urls:before,
+.sidebar .author__urls:after {
+  display: none;
+}
+
+/* Let long labels (e.g. the email address) wrap on narrow screens */
+.sidebar .author__urls li {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 /* Desktop layout: wider sidebar, bigger photo, left-aligned text */
@@ -56,7 +84,10 @@
     margin: 0 0 20px;
   }
 
-  .sidebar .author__content {
+  .sidebar .author__avatar,
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper,
+  .sidebar .author__urls {
     text-align: left;
   }
 
@@ -64,21 +95,5 @@
   .archive,
   .page {
     width: calc(100% - 340px);
-  }
-}
-
-/* OPTIONAL: always show the contact links on mobile instead of
-   hiding them behind the "Follow" dropdown button */
-@media (max-width: 63.9375em) {
-  .sidebar .author__urls-wrapper button {
-    display: none;
-  }
-
-  .sidebar .author__urls {
-    display: block;
-    position: static;
-    box-shadow: none;
-    border: 0;
-    text-align: center;
   }
 }
