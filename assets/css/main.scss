@@ -56,3 +56,27 @@
 .sidebar:hover {
   opacity: 1 !important;
 }
+
+/* --- FIX SOVRAPPOSIZIONE SMARTPHONE --- */
+@media (max-width: 64em) {
+  /* Annulla l'affiancamento orizzontale del tema originale */
+  .sidebar .author__avatar {
+    float: none !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+  
+  /* Contenimento dell'immagine per non farla sbordare dallo schermo */
+  .sidebar .author__avatar img {
+    max-width: 250px !important; 
+    margin: 0 auto !important; /* Centra l'immagine */
+  }
+  
+  /* Forza il contenitore del nome e della bio ad andare a capo sotto l'immagine */
+  .sidebar .author__content {
+    display: block !important;
+    clear: both !important; 
+    padding-top: 10px !important;
+    text-align: center !important; /* Centra il testo sotto la foto per un look più pulito */
+  }
+}
