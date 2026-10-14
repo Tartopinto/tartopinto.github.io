@@ -1,97 +1,84 @@
 ---
-# I trattini servono a Jekyll per processare il file
+# The dashes above are required so Jekyll processes this file
 ---
 
 @import "minimal-mistakes";
 
-/* --- FIX AVATAR GRANDE E QUADRATO --- */
+/* ==========================================================
+   Sidebar avatar and author block
+   Mobile-first: base rules apply to phones, the media query
+   below adds the desktop layout.
+   ========================================================== */
 
-.author__avatar {
-  display: block !important;
-  width: 100% !important; 
-  max-width: 250px !important; /* Forza la larghezza massima */
-  margin-bottom: 20px !important;
+/* Stack avatar and text vertically and center them */
+.sidebar {
+  width: 100%;
+  opacity: 1;
+  transition: none;
+}
+
+.sidebar .author__avatar {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 200px;           /* smaller photo on phones */
+  margin: 0 auto 15px;        /* centered, space below the photo */
+  padding: 0;
 
   img {
-    width: 100% !important;      /* Occupa tutto lo spazio disponibile */
-    height: auto !important;
-    max-width: none !important;  /* Rimuove limiti del tema originale */
-    border-radius: 4px !important; /* La rende quadrata */
-    object-fit: cover !important;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: none;          /* override the theme's small avatar limit */
+    aspect-ratio: 1 / 1;      /* force a square crop */
+    object-fit: cover;
+    border-radius: 4px;       /* square with slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
-/* Allarga la sidebar per ospitare l'immagine più grande */
+.sidebar .author__content {
+  display: block;             /* the theme uses table-cell here */
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  clear: both;
+}
+
+/* Desktop layout: wider sidebar, bigger photo, left-aligned text */
 @media (min-width: 64em) {
   .sidebar {
-    width: 300px !important;
-  }
-  .archive, .page {
-    width: calc(100% - 340px) !important;
-  }
-}
-
-/* 1. Forza l'opacità su tutta la colonna sinistra */
-.sidebar {
-  opacity: 1 !important;
-  transition: none !important;
-  width: 300px !important; /* Manteniamo la larghezza che volevi */
-}
-
-/* 2. Assicuriamoci che anche i link e i testi all'interno siano al 100% */
-.sidebar * {
-  opacity: 1 !important;
-  filter: none !important;
-}
-
-/* 3. Manteniamo la tua foto quadrata e grande */
-.author__avatar img {
-  border-radius: 4px !important;
-  width: 100% !important;
-  max-width: none !important;
-}
-
-/* 4. Evitiamo che torni trasparente quando il mouse esce */
-.sidebar:hover {
-  opacity: 1 !important;
-}
-
-/* --- FIX DEFINITIVO SOVRAPPOSIZIONE SMARTPHONE (FLEXBOX) --- */
-@media (max-width: 64em) {
-  /* Trasformiamo la sidebar in una colonna flessibile per mobile */
-  .sidebar {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    width: 300px;
   }
 
-  /* Se il tema usa un contenitore .author, pieghiamo anche quello */
-  .sidebar .author, .sidebar > div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-
-  /* Testo e foto devono stare al loro posto */
-  .sidebar .author__avatar,
-  .sidebar .author__content {
-    display: block !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    text-align: center !important;
-  }
-
-  /* Spazio sotto la foto */
   .sidebar .author__avatar {
-    margin-bottom: 15px !important;
+    max-width: 250px;
+    margin: 0 0 20px;
   }
 
-  /* Ridimensioniamo l'immagine per il telefono e la centriamo */
-  .sidebar .author__avatar img {
-    max-width: 200px !important; 
-    margin: 0 auto !important;
+  .sidebar .author__content {
+    text-align: left;
+  }
+
+  /* Make room for the wider sidebar */
+  .archive,
+  .page {
+    width: calc(100% - 340px);
+  }
+}
+
+/* OPTIONAL: always show the contact links on mobile instead of
+   hiding them behind the "Follow" dropdown button */
+@media (max-width: 63.9375em) {
+  .sidebar .author__urls-wrapper button {
+    display: none;
+  }
+
+  .sidebar .author__urls {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border: 0;
+    text-align: center;
   }
 }
