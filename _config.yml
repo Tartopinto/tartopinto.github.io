@@ -10,6 +10,9 @@ twitter_username:
 github_username: tartopinto
 minimal_mistakes_skin: air # Puoi provare "air", "aqua", "contrast", "dirt", "neon", "sunrise"
 search: true
+social:
+  type: Person
+  name: "Giordano Fausti"
 
 # Build settings
 markdown: kramdown
@@ -49,9 +52,11 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:fausti.giordano@gmail.com"
 
-footer:
-  links:
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/giordanofausti/"
-    - label: "GitHub"
+  footer:
+    links:
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/giordanofausti/"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/tartopinto"
