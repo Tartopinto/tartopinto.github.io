@@ -57,26 +57,41 @@
   opacity: 1 !important;
 }
 
-/* --- FIX DEFINITIVO SOVRAPPOSIZIONE SMARTPHONE --- */
+/* --- FIX DEFINITIVO SOVRAPPOSIZIONE SMARTPHONE (FLEXBOX) --- */
 @media (max-width: 64em) {
-  /* Disinnesca il layout a tabella/flexbox del contenitore principale */
-  .sidebar .author {
-    display: block !important;
+  /* Trasformiamo la sidebar in una colonna flessibile per mobile */
+  .sidebar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
-  /* Forza avatar e testo a occupare il 100% della riga, impilandosi verticalmente */
+  /* Se il tema usa un contenitore .author, pieghiamo anche quello */
+  .sidebar .author, .sidebar > div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Testo e foto devono stare al loro posto */
   .sidebar .author__avatar,
   .sidebar .author__content {
     display: block !important;
     width: 100% !important;
-    float: none !important;
-    text-align: center !important;
     padding: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
   }
 
-  /* Centra l'immagine e aggiunge spazio prima del nome */
+  /* Spazio sotto la foto */
+  .sidebar .author__avatar {
+    margin-bottom: 15px !important;
+  }
+
+  /* Ridimensioniamo l'immagine per il telefono e la centriamo */
   .sidebar .author__avatar img {
-    margin: 0 auto 15px auto !important;
-    max-width: 220px !important; /* Leggermente ridotta per schermi piccoli */
+    max-width: 200px !important; 
+    margin: 0 auto !important;
   }
 }
