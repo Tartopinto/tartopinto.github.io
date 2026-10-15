@@ -30,6 +30,8 @@
 
 /* Avatar: square photo, centered, with space below */
 .sidebar .author__avatar {
+  height: auto;               /* the theme sets a fixed 36px height on phones */
+  overflow: visible;
   max-width: 200px;
   margin: 0 auto 15px;
 
